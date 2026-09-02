@@ -77,6 +77,10 @@
     .nav-links a{position:relative;padding:10px 0}
     .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:2px;background:var(--brand);transition:.2s}
     .nav-links a:hover::after{right:0}
+    .nav-links .nav-service-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 13px;border:1px solid #d9e0ff;border-radius:999px;background:linear-gradient(135deg,#f4f6ff,#e9eeff);color:var(--brand-dark);box-shadow:0 6px 18px rgba(79,102,245,.1);font-weight:850;transition:.2s ease}
+    .nav-links .nav-service-link::after{display:none}
+    .nav-links .nav-service-link:hover{transform:translateY(-2px);border-color:#b8c4ff;box-shadow:0 10px 24px rgba(79,102,245,.18)}
+    .nav-service-link span{font-size:16px;line-height:1;transition:transform .2s ease}.nav-service-link:hover span{transform:translate(2px,-2px)}
     .nav-links .nav-cta{display:inline-flex;align-items:center;justify-content:center;margin-left:2px;min-height:44px;padding:0 18px;border-radius:12px;background:var(--ink);color:#fff;font-weight:800;font-size:14px;white-space:nowrap}
     .nav-links .nav-cta::after{display:none}
     .menu-btn{display:none;margin-left:auto;width:44px;height:44px;padding:0;border:0;border-radius:12px;background:var(--surface);align-items:center;justify-content:center;cursor:pointer}
@@ -269,7 +273,7 @@
         <a href="#support">제작 지원</a>
         <a href="#operations">운영 지원</a>
         <a href="#price">가격 안내</a>
-        <a href="https://knowhowzip.co.kr/">노하우집 둘러보기</a>
+        <a class="nav-service-link" href="https://knowhowzip.co.kr/">노하우집 둘러보기 <span aria-hidden="true">↗</span></a>
         <a class="nav-cta" href="#apply">입점 상담 신청</a>
       </nav>
       <button class="menu-btn" id="menuBtn" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span></button>
