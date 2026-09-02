@@ -141,7 +141,8 @@
     .problem-list{display:flex;flex-direction:column;gap:14px}
     .problem{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:17px;padding:18px 20px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:rgba(255,255,255,.05);transition:.2s}
     .problem:hover{transform:translateX(5px);background:rgba(255,255,255,.08)}
-    .problem i{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:rgba(134,216,255,.12);color:#9de1ff;font-style:normal;font-size:22px}
+    .problem i{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:rgba(134,216,255,.12);color:#9de1ff;font-style:normal}
+    .problem i svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .problem b{display:block;font-size:16px;margin-bottom:3px}.problem span{color:#939caf;font-size:13px}.problem em{color:#667085;font-style:normal;font-size:20px}
     .turning{grid-column:1/-1;display:flex;align-items:center;gap:18px;margin-top:10px;color:#b7c1ff;font-size:15px;font-weight:750}
     .turning::before,.turning::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(158,172,255,.5))}.turning::after{transform:rotate(180deg)}
@@ -321,10 +322,10 @@
           <p class="section-desc">콘텐츠를 잘 만드는 것과, 클래스를 운영하는 것은 다른 일입니다. 당신이 가장 잘하는 일에만 집중할 수 있어야 합니다.</p>
         </div>
         <div class="problem-list reveal">
-          <div class="problem"><i>◎</i><div><b>촬영은 어디서, 장비는 무엇으로?</b><span>공간과 장비를 알아보는 데서 멈춘 아이디어</span></div><em>01</em></div>
-          <div class="problem"><i>₩</i><div><b>결제와 수강 권한은 어떻게?</b><span>홈페이지와 시스템을 따로 만들어야 하는 부담</span></div><em>02</em></div>
-          <div class="problem"><i>✦</i><div><b>문의와 환불까지 직접 응대해야 하나요?</b><span>수업보다 더 많은 시간을 차지하는 반복 운영</span></div><em>03</em></div>
-          <div class="problem"><i>▣</i><div><b>매출과 정산은 또 어떻게 관리하죠?</b><span>엑셀과 메시지 사이에서 흩어지는 수강생 정보</span></div><em>04</em></div>
+          <div class="problem"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7.5h3l1.5-2h7l1.5 2h3a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 20 19.5H4A1.5 1.5 0 0 1 2.5 18V9A1.5 1.5 0 0 1 4 7.5Z"/><circle cx="12" cy="13" r="4"/></svg></i><div><b>촬영은 어디서, 장비는 무엇으로?</b><span>공간과 장비를 알아보는 데서 멈춘 아이디어</span></div><em>01</em></div>
+          <div class="problem"><i aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6.5 15h4"/><path d="m15.5 14.5 1.5 1.5 3-3"/></svg></i><div><b>결제와 수강 권한은 어떻게?</b><span>홈페이지와 시스템을 따로 만들어야 하는 부담</span></div><em>02</em></div>
+          <div class="problem"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2"/><path d="M4 12.5H3a1.5 1.5 0 0 0-1.5 1.5v3A1.5 1.5 0 0 0 3 18.5h2V12.5H4ZM20 12.5h1a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-2V12.5h1ZM19 18.5c-1 1.5-2.8 2-5.5 2"/><circle cx="12" cy="20.5" r="1"/></svg></i><div><b>문의와 환불까지 직접 응대해야 하나요?</b><span>수업보다 더 많은 시간을 차지하는 반복 운영</span></div><em>03</em></div>
+          <div class="problem"><i aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V14M16 20V8M22 20H2"/><path d="m3 7 5-4 5 3 7-4M17 2h3v3"/></svg></i><div><b>매출과 정산은 또 어떻게 관리하죠?</b><span>엑셀과 메시지 사이에서 흩어지는 수강생 정보</span></div><em>04</em></div>
         </div>
         <div class="turning">그래서 노하우집은 ‘업로드 도구’보다 더 많은 일을 합니다</div>
       </div>
