@@ -171,10 +171,13 @@
     .production-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .production-card{position:relative;min-height:220px;padding:28px;border:1px solid var(--line);border-radius:24px;background:#fff;overflow:hidden;transition:.25s}
     .production-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm)}
-    .production-card.studio-photo{background:linear-gradient(180deg,rgba(8,32,92,.08),rgba(8,28,76,.82)),url('assets/studio-photo.webp') center/cover;color:#fff;border-color:transparent}
-    .production-card.studio-photo .pc-num{color:rgba(255,255,255,.2)}
-    .production-card.studio-photo .pc-icon{background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(8px)}
-    .production-card.studio-photo p{color:rgba(255,255,255,.84)}
+    .production-card.photo-card{color:#fff;border-color:transparent}
+    .production-card.studio-photo{background:linear-gradient(180deg,rgba(8,32,92,.08),rgba(8,28,76,.82)),url('assets/studio-photo.webp') center/cover}
+    .production-card.equipment-photo{background:linear-gradient(180deg,rgba(8,32,92,.12),rgba(8,28,76,.84)),url('assets/equipment-photo.webp') center/cover}
+    .production-card.wide.editing-photo{background:linear-gradient(90deg,rgba(5,20,58,.9) 0%,rgba(5,20,58,.76) 48%,rgba(5,20,58,.22) 100%),url('assets/editing-photo.webp') center/cover}
+    .production-card.photo-card .pc-num{color:rgba(255,255,255,.2)}
+    .production-card.photo-card .pc-icon{background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(8px)}
+    .production-card.photo-card p{color:rgba(255,255,255,.84)}
     .production-card.wide{grid-column:1/-1;min-height:185px;background:var(--brand);color:#fff;border-color:transparent}
     .production-card .pc-num{position:absolute;right:19px;top:12px;color:#eef0f5;font-size:64px;font-weight:900;line-height:1}.production-card.wide .pc-num{color:rgba(255,255,255,.12)}
     .production-card .pc-icon{display:grid;place-items:center;width:48px;height:48px;margin-bottom:28px;border-radius:14px;background:var(--brand-soft);color:var(--brand)}.production-card .pc-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.production-card.wide .pc-icon{background:rgba(255,255,255,.14);color:#fff}
@@ -384,9 +387,9 @@
           </div>
         </div>
         <div class="production-cards reveal">
-          <article class="production-card studio-photo"><span class="pc-num">01</span><span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"/><path d="m18 12 5-3v10l-5-3M5 8l2-4h5l2 4"/><circle cx="9.5" cy="14" r="3"/></svg></span><h3>촬영 환경 지원</h3><p>별도 공간을 찾는 수고 없이, 클래스 촬영에 집중할 수 있는 스튜디오를 지원합니다.</p></article>
-          <article class="production-card"><span class="pc-num">02</span><span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8.5h18v11H3v-11ZM8 8.5V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2.5"/><path d="M3 13h18M9.5 13v2h5v-2"/></svg></span><h3>기본 장비 지원</h3><p>마이크·조명·삼각대 등 첫 촬영에 필요한 기본 장비를 준비합니다.</p></article>
-          <article class="production-card wide"><span class="pc-num">03</span><span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 6 7 6-7 6M20 6l-7 6 7 6"/><circle cx="12" cy="12" r="1.5"/><path d="M8 4h8M8 20h8"/></svg></span><h3>영상 편집 서비스</h3><p>불필요한 구간 삭제, 영상·음성 정리 등 강의 형태에 맞는 기본 편집 서비스를 이용할 수 있습니다.</p></article>
+          <article class="production-card photo-card studio-photo"><span class="pc-num">01</span><span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"/><path d="m18 12 5-3v10l-5-3M5 8l2-4h5l2 4"/><circle cx="9.5" cy="14" r="3"/></svg></span><h3>촬영 환경 지원</h3><p>별도 공간을 찾는 수고 없이, 클래스 촬영에 집중할 수 있는 스튜디오를 지원합니다.</p></article>
+          <article class="production-card photo-card equipment-photo"><span class="pc-num">02</span><span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 8.5h18v11H3v-11ZM8 8.5V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2.5"/><path d="M3 13h18M9.5 13v2h5v-2"/></svg></span><h3>기본 장비 지원</h3><p>마이크·조명·삼각대 등 첫 촬영에 필요한 기본 장비를 준비합니다.</p></article>
+          <article class="production-card wide photo-card editing-photo"><span class="pc-num">03</span><span class="pc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 6 7 6-7 6M20 6l-7 6 7 6"/><circle cx="12" cy="12" r="1.5"/><path d="M8 4h8M8 20h8"/></svg></span><h3>영상 편집 서비스</h3><p>불필요한 구간 삭제, 영상·음성 정리 등 강의 형태에 맞는 기본 편집 서비스를 이용할 수 있습니다.</p></article>
         </div>
       </div>
     </section>
