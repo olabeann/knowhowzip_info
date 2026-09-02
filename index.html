@@ -226,9 +226,8 @@
     .cta-card::before,.cta-card::after{content:"";position:absolute;z-index:-1;border-radius:50%}.cta-card::before{width:500px;height:500px;right:-230px;top:-280px;background:rgba(134,216,255,.26)}.cta-card::after{width:380px;height:380px;left:-210px;bottom:-230px;background:rgba(223,255,134,.18)}
     .cta-card h2{margin:0;font-size:clamp(34px,4.9vw,60px);line-height:1.12;letter-spacing:-.05em;font-weight:900}.cta-card p{margin:20px auto 30px;max-width:590px;color:rgba(255,255,255,.82);font-size:17px;line-height:1.7}.cta-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.cta-note{margin-top:20px;color:rgba(255,255,255,.62);font-size:12px;font-weight:650}
 
-    /* footer + toast */
+    /* footer */
     footer{padding:48px 0 58px;border-top:1px solid var(--line);background:#fff}.footer-inner{display:flex;align-items:flex-end;justify-content:space-between;gap:30px}.footer-copy{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.7}.footer-links{display:flex;gap:22px;color:var(--muted);font-size:12px;font-weight:700}
-    .toast{position:fixed;z-index:100;left:50%;bottom:28px;transform:translate(-50%,30px);padding:13px 18px;border-radius:13px;background:rgba(16,24,40,.94);color:#fff;box-shadow:0 18px 50px rgba(0,0,0,.25);font-size:13px;font-weight:750;opacity:0;pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}
 
     /* reveal */
     .reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
@@ -274,7 +273,7 @@
           <h1>당신의 <span class="accent">노하우</span>만<br>준비하세요.<br>나머지는 노하우집이<br>준비합니다.</h1>
           <p>팬에게 전하고 싶은 경험이 있다면, 이미 시작할 준비는 끝났습니다. 촬영부터 판매, 영상 보안, 수강생 관리, CS와 정산까지 노하우집이 함께합니다.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#apply">내 콘텐츠 판매 시작하기 <span class="arrow">→</span></a>
+            <a class="button primary" href="http://pf.kakao.com/_xksSwX/chat" target="_blank" rel="noopener noreferrer">내 콘텐츠 판매 시작하기 <span class="arrow">→</span></a>
             <a class="button secondary" href="#process">지원 범위 한눈에 보기</a>
           </div>
           <div class="hero-proof">
@@ -454,7 +453,7 @@
         <div class="cta-card reveal">
           <h2>당신의 영향력을<br>당신의 비즈니스로.</h2>
           <p>팬에게 건넬 수 있는 경험과 노하우가 있다면 충분합니다. 고정비 없이, 혼자 운영하는 부담 없이 첫 클래스를 시작해 보세요.</p>
-          <div class="cta-buttons"><button class="button light" type="button" data-contact>입점 상담 신청하기 <span class="arrow">→</span></button></div>
+          <div class="cta-buttons"><a class="button light" href="http://pf.kakao.com/_xksSwX/chat" target="_blank" rel="noopener noreferrer">입점 상담 신청하기 <span class="arrow">→</span></a></div>
           <div class="cta-note">입점비 0원 · 월 이용료 0원 · 구축비 0원</div>
         </div>
       </div>
@@ -468,12 +467,9 @@
     </div>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite">입점 상담 채널을 연결해 주세요.</div>
-
   <script>
     const menuBtn = document.getElementById('menuBtn');
     const navLinks = document.getElementById('navLinks');
-    const toast = document.getElementById('toast');
 
     function closeMenu(){
       menuBtn.classList.remove('active');
@@ -496,15 +492,6 @@
 
     document.querySelectorAll('.faq-q').forEach(button=>{
       button.addEventListener('click',()=>button.closest('.faq-item').classList.toggle('open'));
-    });
-
-    let toastTimer;
-    document.querySelectorAll('[data-contact]').forEach(button=>{
-      button.addEventListener('click',()=>{
-        toast.classList.add('show');
-        clearTimeout(toastTimer);
-        toastTimer=setTimeout(()=>toast.classList.remove('show'),2800);
-      });
     });
 
     const observer = new IntersectionObserver(entries=>{
