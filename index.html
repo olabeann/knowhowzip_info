@@ -76,7 +76,8 @@
     .nav-links a{position:relative;padding:10px 0}
     .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:4px;height:2px;background:var(--brand);transition:.2s}
     .nav-links a:hover::after{right:0}
-    .nav-cta{margin-left:2px;min-height:44px;padding:0 18px;border-radius:12px;background:var(--ink);color:#fff;font-weight:800;font-size:14px}
+    .nav-links .nav-cta{display:inline-flex;align-items:center;justify-content:center;margin-left:2px;min-height:44px;padding:0 18px;border-radius:12px;background:var(--ink);color:#fff;font-weight:800;font-size:14px;white-space:nowrap}
+    .nav-links .nav-cta::after{display:none}
     .menu-btn{display:none;margin-left:auto;width:44px;height:44px;padding:0;border:0;border-radius:12px;background:var(--surface);align-items:center;justify-content:center;cursor:pointer}
     .menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:20px;height:2px;background:var(--ink);transition:.2s}
     .menu-btn span{position:relative}
