@@ -100,8 +100,7 @@
     .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
     .hero-proof{display:flex;align-items:center;gap:18px;margin-top:28px;color:var(--muted);font-size:13px;font-weight:650}
     .proof-avatars{display:flex;padding-left:8px}
-    .proof-avatars span{display:grid;place-items:center;width:34px;height:34px;margin-left:-8px;border:3px solid #f5f7ff;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:850}
-    .proof-avatars span:nth-child(2){background:var(--brand)}.proof-avatars span:nth-child(3){background:#ff8f79}.proof-avatars span:nth-child(4){background:#74806c}
+    .proof-avatars img{width:40px;height:40px;margin-left:-8px;border:3px solid #f5f7ff;border-radius:50%;object-fit:cover;box-shadow:0 4px 12px rgba(16,24,40,.14)}
     .hero-visual{position:relative;min-height:600px;display:flex;align-items:center;justify-content:center}
     .visual-orbit{position:absolute;width:500px;height:500px;border:1px solid rgba(79,102,245,.14);border-radius:50%}
     .visual-orbit::before,.visual-orbit::after{content:"";position:absolute;border:1px solid rgba(79,102,245,.11);border-radius:50%}
@@ -279,7 +278,12 @@
             <a class="button secondary" href="#process">지원 범위 한눈에 보기</a>
           </div>
           <div class="hero-proof">
-            <div class="proof-avatars" aria-hidden="true"><span>뷰티</span><span>머니</span><span>핏</span><span>라이프</span></div>
+            <div class="proof-avatars" aria-label="뷰티, 머니, 펫, 라이프 크리에이터 예시">
+              <img src="assets/creators/beauty.webp" alt="뷰티 크리에이터" title="뷰티 크리에이터">
+              <img src="assets/creators/money.webp" alt="머니 크리에이터" title="머니 크리에이터">
+              <img src="assets/creators/pet.webp" alt="펫 크리에이터" title="펫 크리에이터">
+              <img src="assets/creators/life.webp" alt="라이프 크리에이터" title="라이프 크리에이터">
+            </div>
             <span>분야는 달라도, 시작에 필요한 운영은 같습니다.</span>
           </div>
         </div>
