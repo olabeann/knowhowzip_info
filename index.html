@@ -181,7 +181,7 @@
     .operations-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:60px}
     .op-card{min-height:285px;padding:28px;border:1px solid var(--line);border-radius:24px;background:#fff;transition:.25s}
     .op-card:hover{border-color:#cfd6ff;box-shadow:0 20px 50px rgba(47,63,150,.1);transform:translateY(-5px)}
-    .op-icon{display:grid;place-items:center;width:50px;height:50px;border-radius:15px;background:var(--brand-soft);color:var(--brand)}.op-icon svg{width:24px;height:24px}
+    .op-icon{display:grid;place-items:center;width:50px;height:50px;border-radius:15px;background:var(--brand-soft);color:var(--brand)}.op-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
     .op-card h3{margin:25px 0 9px;font-size:20px;letter-spacing:-.035em}.op-card>p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
     .op-card ul{list-style:none;margin:22px 0 0;padding:17px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:7px}.op-card li{padding:6px 9px;border-radius:8px;background:var(--surface);color:var(--ink-2);font-size:11px;font-weight:750}
 
@@ -390,12 +390,12 @@
           <p class="section-desc">결제 알림이 울린 순간부터 수강 종료와 정산까지, 매번 손으로 반복하던 일을 하나의 운영 흐름으로 만듭니다.</p>
         </div>
         <div class="operations-grid reveal">
-          <article class="op-card"><span class="op-icon">₩</span><h3>판매·결제</h3><p>별도 홈페이지나 결제 시스템 없이 전용 페이지에서 바로 판매를 시작합니다.</p><ul><li>판매 페이지</li><li>결제 내역</li><li>수강 권한</li></ul></article>
-          <article class="op-card"><span class="op-icon">▶</span><h3>영상·콘텐츠</h3><p>구매한 수강생에게만 영상과 자료가 안전하게 제공되도록 관리합니다.</p><ul><li>VOD 스트리밍</li><li>영상 보안</li><li>자료 제공</li></ul></article>
-          <article class="op-card"><span class="op-icon">♙</span><h3>수강생 관리</h3><p>엑셀 대신 결제 상태와 수강 현황, 클래스별 명단을 한곳에서 확인합니다.</p><ul><li>수강 상태</li><li>라이브 일정</li><li>참여 링크</li></ul></article>
-          <article class="op-card"><span class="op-icon">✉</span><h3>안내 자동화</h3><p>결제·시작·라이브·종료 일정을 필요한 순간에 안내합니다.</p><ul><li>결제 완료</li><li>일정 안내</li><li>종료 알림</li></ul></article>
-          <article class="op-card"><span class="op-icon">◎</span><h3>CS·환불</h3><p>결제, 로그인, 수강 권한, 플랫폼 이용과 환불 관련 문의를 지원합니다.</p><ul><li>플랫폼 문의</li><li>취소·환불</li><li>이용 지원</li></ul></article>
-          <article class="op-card"><span class="op-icon">✓</span><h3>매출·정산</h3><p>판매와 환불 내역을 따로 계산하지 않아도 정산 예정 금액까지 확인합니다.</p><ul><li>클래스별 매출</li><li>환불 내역</li><li>정산 관리</li></ul></article>
+          <article class="op-card"><span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4M16.5 14v3M15 15.5h3"/></svg></span><h3>판매·결제</h3><p>별도 홈페이지나 결제 시스템 없이 전용 페이지에서 바로 판매를 시작합니다.</p><ul><li>판매 페이지</li><li>결제 내역</li><li>수강 권한</li></ul></article>
+          <article class="op-card"><span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.5 20 6v5.5c0 4.7-3.2 8-8 10-4.8-2-8-5.3-8-10V6l8-3.5Z"/><path d="m10 8.5 5 3.5-5 3.5v-7Z"/></svg></span><h3>영상·콘텐츠</h3><p>구매한 수강생에게만 영상과 자료가 안전하게 제공되도록 관리합니다.</p><ul><li>VOD 스트리밍</li><li>영상 보안</li><li>자료 제공</li></ul></article>
+          <article class="op-card"><span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20v-1.5A5.5 5.5 0 0 1 8 13h2a5.5 5.5 0 0 1 5.5 5.5V20M16 6.5a3 3 0 0 1 0 5.8M17.5 14.5a5 5 0 0 1 4 4.9v.6"/></svg></span><h3>수강생 관리</h3><p>엑셀 대신 결제 상태와 수강 현황, 클래스별 명단을 한곳에서 확인합니다.</p><ul><li>수강 상태</li><li>라이브 일정</li><li>참여 링크</li></ul></article>
+          <article class="op-card"><span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 8.5A7 7 0 0 1 19 8.5c0 7 3 7 3 8.5H2c0-1.5 3-1.5 3-8.5Z"/><path d="M9.5 20a3 3 0 0 0 5 0M12 2V1"/><path d="m10.5 8.5 1.5 1.5 2.5-3"/></svg></span><h3>안내 자동화</h3><p>결제·시작·라이브·종료 일정을 필요한 순간에 안내합니다.</p><ul><li>결제 완료</li><li>일정 안내</li><li>종료 알림</li></ul></article>
+          <article class="op-card"><span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2"/><path d="M4 12.5H3A1.5 1.5 0 0 0 1.5 14v3A1.5 1.5 0 0 0 3 18.5h2v-6ZM20 12.5h1a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-2v-6Z"/><path d="M19 18.5c-1 1.5-2.8 2-5.5 2"/></svg></span><h3>CS·환불</h3><p>결제, 로그인, 수강 권한, 플랫폼 이용과 환불 관련 문의를 지원합니다.</p><ul><li>플랫폼 문의</li><li>취소·환불</li><li>이용 지원</li></ul></article>
+          <article class="op-card"><span class="op-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V11M10 20v-6M16 20V8M22 20H2"/><path d="m3 8 5-4 5 3 7-5M17 2h3v3"/><path d="m17.5 12.5 1.5 1.5 3-3"/></svg></span><h3>매출·정산</h3><p>판매와 환불 내역을 따로 계산하지 않아도 정산 예정 금액까지 확인합니다.</p><ul><li>클래스별 매출</li><li>환불 내역</li><li>정산 관리</li></ul></article>
         </div>
       </div>
     </section>
